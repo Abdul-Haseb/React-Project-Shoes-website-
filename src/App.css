@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;       
+}
+:root {
+    --red: #D01C28;
+    --grey: #2e2e2e;
+}
+.main {
+    width: 100%;
+   max-height: 100vh;
+   box-sizing: border-box;
+}
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0px auto;
+    height: 72px;
+}
+.Navigation-list {
+    display: flex;
+    list-style-type: none;
+    gap: 0.75rem;
+    font-weight: 600;
+    font-size:large
+}
+.Navigation-list li a {
+color:inherit;
+text-decoration: inherit;
+padding: 0.20rem;
+border-radius: 0.3rem;
+}
+.Navigation-list li a:hover {
+    /* text-decoration:underline;
+    text-underline-offset: 0.25rem; */
+    background: var(--red);
+    color: rgb(230, 215, 215);  
+    box-shadow: 0px 0px 3px #000;
+    font-weight: 500;
+} 
+.login-btn {
+    all: unset;
+    background-color: var(--red);
+    padding: 6px 1rem;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #000;
+}
+.login-btn:active , .Navigation-list li a:active, .heroSec-btn1:active, .heroSec-btn2:active {
+    box-shadow: 0px 0px 5px #000;
+}
+.heroSection {
+    display: flex;
+    max-width: 1280px;
+    padding: 0px 1rem;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroSec-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.heroSec-heading {
+ font-size: 6.75rem;
+ font-weight: 800;
+ line-height: 6.375rem;
+}
+.heroSec-text {
+    max-width: 25.25rem;
+    height: 5.688rem;
+    color: var(--grey);
+}
+.heroSec-btn1 {
+    background-color: var(--red);
+    color: white;
+    padding: 0.625rem 1rem;
+    font-size: 1rem;
+    border: none; 
+    border-radius: 0.25rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #000;
+    margin-right: 1rem;
+}
+.heroSec-btn2 {
+        padding: 0.625rem 1rem;
+        font-size: 1rem;
+        background-color: transparent;
+        color: var(--grey);
+        border: 1px solid var(--grey);
+        border-radius: 0.25rem;
+        cursor: pointer;
+        box-shadow: 0px 0px 3px #000;
+}
+.herSec-availability {
+    font-size: small;
+    color: var(--grey);
+    margin-bottom: 1rem;
+
+}
+.herSec-availability-sites {
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
